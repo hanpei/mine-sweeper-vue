@@ -164,7 +164,7 @@ function checkGameStatus(state: GameState) {
 
 <template>
   <div flex justify-center bg="#363C4F" min-h-screen flex-col items-center>
-    <h2 color-white>Mine Sweeper</h2>
+    <h2 color-white>Minesweeper</h2>
 
     <div min-w-20 bg-white min-h-20 flex flex-col border="8 dark" relative>
       <div
