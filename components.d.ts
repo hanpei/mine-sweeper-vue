@@ -7,6 +7,8 @@ declare module 'vue' {
     ICarbonAccessibility: typeof import('~icons/carbon/accessibility')['default']
     IMdiAccountBox: typeof import('~icons/mdi/account-box')['default']
     INotoBomb: typeof import('~icons/noto/bomb')['default']
+    INotoFlag: typeof import('~icons/noto/flag')['default']
+    INotoTriangularFlag: typeof import('~icons/noto/triangular-flag')['default']
   }
 }
 

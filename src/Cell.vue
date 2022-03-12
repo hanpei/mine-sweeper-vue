@@ -5,7 +5,6 @@ defineProps<{ block: Block }>();
 const isDev = false;
 
 function getClass(block: Block) {
-  //   console.log(block);
   if (block.revealed) {
     return block.mine ? 'bg-red-500/40' : 'bg-gray-200/20';
   }
@@ -26,8 +25,11 @@ function getClass(block: Block) {
     cursor-pointer
     :class="getClass(block)"
   >
-    <template v-if="block.revealed || isDev">
-      <div v-if="block.mine">
+    <template v-if="block.flag">
+      <i-noto-triangular-flag text-lg />
+    </template>
+    <template v-else-if="block.revealed || isDev">
+      <div v-if="block.mine" flex items-center justify-center>
         <i-noto-bomb text-lg />
       </div>
       <div v-else>{{ block.adjacent > 0 ? block.adjacent : '' }}</div>
